@@ -9,7 +9,7 @@ import selenium.webdriver
 @pytest.fixture
 def browser():
 
-    # Initizlie the ChromeDriver instance
+    # Initialize the ChromeDriver instance
     b = selenium.webdriver.Chrome()
 
     # Make its calls wait up to 10 seconds for elements to appear
@@ -18,5 +18,5 @@ def browser():
     # Return the WebDriver instance for the setup
     yield b
 
-    # Quite the WebDriver instance for the cleanup
+    # Quit the WebDriver instance for the cleanup
     b.quit()
