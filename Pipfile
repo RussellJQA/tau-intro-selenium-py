@@ -10,6 +10,7 @@ black = "*"
 [packages]
 pytest = "*"
 atomicwrites = "*"
+pytest-xdist = "*"
 
 [requires]
 python_version = "3.8"
